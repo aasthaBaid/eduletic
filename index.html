@@ -75,6 +75,15 @@
         .whyme .para {
             padding: 60px;
         }
+        input {
+            width:fit-content;
+        }
+        tr,td {
+            width: 90%;
+        }
+        table {
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -160,19 +169,27 @@
     </div>
     <br><br>
     <center>
-        <div class="box"
-            style="border: 10px solid #444141; height: 500px;width: 800px; align-items: center; justify-content: center; display: block;">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone">
-            <input type="text" placeholder="Designation">
-            <input type="text" placeholder="School Name">
-            <input type="text" placeholder="City">
-            <input type="text" placeholder="How Did You Hear About Us">
-            <input type="text" placeholder="Query">
-            <input type="submit">
+        <form>
+            <div class="box"
+            style="border: 10px solid #444141; height: 500px;width: 800px; display: grid; ">
+            <table>
+            <tr><td><p style="color: #DE39CD; font-size: 2rem;">INQUIRY</p></td></tr>
+            <tr><td><input type="text" placeholder="Name"></td></tr>
+            <tr><td><input type="email" placeholder="Email"></td></tr>
+            <tr><td><input type="number" placeholder="Phone"></td></tr>
+            <tr><td><input type="text" placeholder="Designation"></td></tr>
+            <tr><td><input type="text" placeholder="School Name"></td></tr>
+            <tr><td><input type="text" placeholder="City"></td></tr>
+            <tr><td><input type="text" placeholder="How Did You Hear About Us"></td></tr>
+            <tr><td><input type="text" placeholder="Query"></td></tr>
+            <tr><td><input type="submit"></td></tr>
         </div>
+    </table>
+    </form>
     </center>
+    <div class="contact">
+        
+    </div>
 </body>
 
 </html>
