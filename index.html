@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #171826;
@@ -78,11 +79,11 @@
         input {
             width:fit-content;
         }
-        tr,td {
-            width: 90%;
-        }
         table {
             margin: 0 auto;
+        }
+        #a:hover {
+          text-decoration: underline;
         }
     </style>
 </head>
@@ -102,7 +103,7 @@
                 </li>
                 </li>
                 <li>
-                    <a href="#">RESOURCES</a>
+                    <a href="./resources.html">RESOURCES</a>
                 </li>
                 </li>
                 <button><a href='./login/loginindex.html'>login</a></button>
@@ -174,7 +175,7 @@
             style="border: 10px solid #444141; height: 500px;width: 800px; display: grid; ">
             <table>
             <tr><td><p style="color: #DE39CD; font-size: 2rem;">INQUIRY</p></td></tr>
-            <tr><td><input type="text" placeholder="Name"></td></tr>
+            <tr><td><input type="text" placeholder="Name" style="width: 100%;"></td></tr>
             <tr><td><input type="email" placeholder="Email"></td></tr>
             <tr><td><input type="number" placeholder="Phone"></td></tr>
             <tr><td><input type="text" placeholder="Designation"></td></tr>
@@ -187,8 +188,19 @@
     </table>
     </form>
     </center>
-    <div class="contact">
-        
+    <br>
+    <hr style="border-style: dotted;">
+    <div class="contact" style="display: flex;" >
+      
+        <div class="loc" style="padding: 40px; color: antiquewhite; space">
+          <p style="font-size: 3rem; color: #DE39CD;">CONTACT US</p>
+          <i id="a" class="fa-solid fa-location-crosshairs">Vellore Institute of Technology,Vellore,632014 </i> <br>
+          <i id="a" class="fa-solid fa-phone">9099823033</i> <br>
+          <i id="a" class="fa-regular fa-envelope">eduletic@gmail.com</i> <br>
+        </div>
+        <div style="padding: 40px;">
+          <img src="./images/logo.jpg" style="height: 150px;width: 600px;">
+        </div>
     </div>
 </body>
 
